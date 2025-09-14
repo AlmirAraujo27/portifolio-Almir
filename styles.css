@@ -208,7 +208,7 @@ h1 {
 }
 
 .sobre{
-    padding: 15rem 2rem;
+    padding: 10rem 2rem;
 }
 .sobre-titulo{
     font-size: 3rem;
@@ -571,5 +571,6 @@ h1 {
         transform: translateY(0);
     }
 }
+
 
 /**/
