@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Almir Araújo | Portfólio</title>
+
+
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<script>
+    function toggleHoverInfo() {
+        const info = document.getElementById("hoverInfo");
+        info.classList.toggle("show");
+    }
+
+    function copiarEmail() {
+        const email = "almiraraujo11111@gmail.com";
+        navigator.clipboard.writeText(email).then(() => {
+            alert("Email copiado com sucesso!");
+        }).catch(() => {
+            alert("Erro ao copiar o email.");
+        });
+    }
+</script>
+
+<div class="modal-imagem" id="modalImagem" onclick="fecharImagem()">
+    <img id="imagemAmpliada" src="" alt="Imagem ampliada">
+</div>
+
+
+
+
+
+<body>
+
+
+    <div class="particulas"></div>
+    <nav class="navegacao"> <!-- Barra de Navegação -->
+        <ul class="menu"> <!-- Opção da barra de navegação-->
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li><!--usando # para poder navegar pela pagina sendo clicavel e class para estilizar com CSS-->
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contatos" class="menu-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <img src="./img/perfil2.jpg" alt="Foto do Almir Araújo" class="foto-perfil">
+
+        <div class="nome-hover" onclick="toggleHoverInfo()">
+            <h1 class="nome-efeito">Almir Araújo</h1>
+            <p class="cabecalho-subtitulo">Aspirante a Desenvolvedor Front End</p>
+
+            <div class="hover-info" id="hoverInfo">
+                <button onclick="copiarEmail()" class="botao-copiar">Copiar</button>
+                <span class="email-texto">almiraraujo11111@gmail.com</span>
+                <p>
+                    <a href="https://drive.google.com/file/d/1vcQX3DwOZcqgl4gG2ojBOOy0CLl3ThQm/view?usp=sharing"
+                        target="_blank" class="botao-curriculo">
+                        📄 Download Curriculo
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <section id="sobre" class="sobre">
+            <!-- conteúdo da seção -->
+        </section>
+    </main>
+
+
+    <h2 class="sobre-titulo">Sobre mim</h2>
+    <div class="sobre-caixa">
+        <p class="sobre-paragrafo">
+            <!--//Olá! Sou estudante de Análise e Desenvolvimento de Sistemas, atualmente dando meus primeiros passos no mundo da programaçaoa.Gosto demais de tecnologia desde muito jovem, e agora estou estudando com foco em aprender e crescer na carreira de Desenvolvedor.
+                    Por outro lado, ja tenho bastante experiencia com manutençao de comaputadores e instalaçao de sistemas(um hobby que faço ha um bom tempo e com confiança).
+                    Moro em Salvaodor-Ba, sou Capoeirista, gamer nas outras vagas,e com dedicaçao,pesquisa e uma boa dose de cafe e positividade, a gente vai longe!😊-->
+            Olá! Sou estudante de Análise e Desenvolvimento de Sistemas, atualmente dando meus primeiros passos
+            no
+            mundo da programação. Gosto demais de tecnologia desde muito jovem, e agora estou estudando com foco
+            em aprender e crescer na carreira de desenvolvedor.
+
+            Por outro lado, já tenho bastante experiência com manutenção de computadores e instalação de
+            sistemas — um hobby que pratico há bastante tempo e com confiança.
+
+            Moro em Salvador-BA, sou capoeirista, designer, gamer nas horas vagas, e acredito que com dedicação,
+            curiosidade, uma boa dose de pesquisa, café e positividade,<br>a gente vai longe! 😊👾
+        </p>
+    </div><!--sobre-caixa-->
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus projetos</h2>
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <div class="loading-wrapper">
+                    <div class="loader barra">
+                        <h2 class="loading-text">Loading</h2>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">Em breve...</h3>
+                    <p class="paragrafo-projetos">Projeto em desenvolvimento</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <div class="loading-wrapper">
+                    <div class="loader barra">
+                        <h2 class="loading-text">Loading</h2>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">Em breve...</h3>
+                    <p class="paragrafo-projetos">Projeto em desenvolvimento</p>
+                </div>
+            </div>
+
+
+            <div class="projetos-card">
+                <!-- <img src="./img/projeto3.png" alt="Projeto 1" class="projetos-imagem"> -->
+                <div class="loading-wrapper">
+                    <div class="loader barra">
+                        <h2 class="loading-text">Loading</h2>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">Em breve...</h3>
+                    <p class="paragrafo-projetos">Projeto em desenvolvimento</p>
+                </div>
+            </div>
+
+        </div> <!--projetos-caixa-->
+    </section> <!-- PROJETOS -->
+
+    <!-- HELP DESK E DESING CARDS  -->
+
+    <section id="projetos1" class="projetos1">
+        <h2 class="projetos-titulo1">Manutenções & Design</h2>
+        <div class="projetos-caixa1">
+
+            <div class="projetos-card">
+                <img src="./img/d.jpg" alt="Projeto 2" class="projetos-imagem1" onclick="ampliarImagem(this.src)">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos1">Montagem de PC Gamer - <br> R5 5600GT</h3>
+                    <p class="paragrafo-projetos1">
+                        🔧 Montagem completa do hardware<br>
+                        💾 Instalação de sistema operacional<br>
+                        ⚙️ Configuração de drivers e otimização<br>
+                        🖼️ Setup com iluminação RGB personalizada<br>
+                        📍 Salvador-BA
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/meu.jpg" alt="Projeto 2" class="projetos-imagem1">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos1">PC Gamer R7 5700X</h3>
+                    <p class="paragrafo-projetos1">
+                        🔧 Montagem completa do hardware<br>
+                        💾 Instalação de sistema operacional<br>
+                        ⚙️ TUF = GPU,FONTE e PLACA MÃE<br>
+                        🖼️ Setup com iluminação RGB personalizada<br>
+                        📍 Salvador-BA</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/b.jpg" alt="Projeto 2" class="projetos-imagem1">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos1">PC Intermediário</h3>
+                    <p class="paragrafo-projetos1">
+                        🔧 Montagem completa do hardware<br>
+                        💾 Instalação de sistema operacional<br>
+                        ⚙️ Configuração de drivers e otimização<br>
+                        🖼️ RGB Rainbow<br>
+                        📍 Salvador-BA</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/k.jpg" alt="Projeto 2" class="projetos-imagem1">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos1">PC Gamer AM5 - Desempenho🔥</h3>
+                    <p class="paragrafo-projetos1">
+                        🛠️ Montagem especializada - AM5<br>
+                        ⚡ Ideal para competitivos e multitarefas<br>
+                        🎯 Drivers otimizados+máxima performance<br>
+                        🌈 Iluminação ARGB ajustável<br>
+                        📍 Salvador-BA</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/flyer.jpg" alt="Projeto 2" class="projetos-imagem1">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos1">Flyer de divulgação</h3>
+                    <p class="paragrafo-projetos1">
+                        🔧 Assistência completa<br>
+                        🖥️ Instalação de sistemas operacionais<br>
+                        🧼 Manutenção preventiva e substituição<br>
+                        ⚙️ Trabalhamos as principais marcas<br>
+                        📍 Atendimento em Salvador-BA</p>
+                </div>
+            </div>
+
+
+            <div class="projetos-card">
+                <div class="loading-wrapper">
+                    <div class="loader barra">
+                        <h2 class="loading-text">Loading</h2>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">Em breve...</h3>
+                    <p class="paragrafo-projetos">Projeto em desenvolvimento</p>
+                </div>
+            </div>
+
+
+        </div> <!--projetos-caixa-->
+    </section><!-- HELP DESK E DESING CARDS  -->
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWpp(event)">
+            <div class="grupo-form">
+                <input id="nome" placeholder="Digite seu nome" class="campo-form">
+            </div>
+
+            <div class="grupo-form">
+                <textarea id="mensagem" class="campo-form" placeholder="Digite sua Mensagem" rows="6"></textarea>
+            </div>
+
+            <button type="submit" class="botao-form">Enviar WhatsApp</button>
+        </form>
+    </section>
+
+    <script>
+        function enviarWpp(event) {
+            event.preventDefault();
+
+            const nome = document.getElementById("nome").value;
+            const mensagem = document.getElementById("mensagem").value;
+
+            const telefone = "5571988119067";
+
+            const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
+            const msgFormatada = encodeURIComponent(texto);
+
+            const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+            window.open(url, "_blank");
+        }
+
+        function ampliarImagem(src) {
+            const modal = document.getElementById("modalImagem");
+            const img = document.getElementById("imagemAmpliada");
+            img.src = src;
+            modal.classList.add("show");
+        }
+
+        function fecharImagem() {
+            document.getElementById("modalImagem").classList.remove("show");
+        }
+        document.querySelectorAll('.projetos-imagem1').forEach(img => {
+            img.addEventListener('click', () => ampliarImagem(img.src));
+        });
+
+
+    </script>
+    </main>
+    
+    <footer class="rodape">
+        <p class="rodape-texto">© 2025 Almir Araújo. Todos os direitos reservados.</p>
+        <div class="rodape-icones">
+            <a href="https://www.linkedin.com/in/almir-ara%C3%BAjo/" target="_blank" class="icone-linkedin"
+                alt="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/AlmirAraujo27" target="_blank" class="icone-github" alt="GitHub"><i
+                    class='bx bxl-github'></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
